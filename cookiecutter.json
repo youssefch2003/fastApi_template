@@ -1,0 +1,15 @@
+{
+    "project_slug": "back",
+    "project_name": "My FastApi App",
+    "author": "",
+    "email":"",
+    "database_url": "sqlite:///./sql_app.db",
+    "secret_key": "A secret key",
+    "version": "0.1.0",
+    "description": ""
+
+
+
+
+
+}

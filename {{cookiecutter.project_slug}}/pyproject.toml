@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "{{cookiecutter.project_name}}"
+version =  "0.1.0"
+description = "{{cookiecutter.description}}"
+authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}> "]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.1"
+sqlalchemy = "^2.0.30"
+requests = "^2.32.3"
+databases = "^0.9.0"
+pytest = "^8.2.2"
+vcrpy = "^6.0.1"
+psycopg2-binary = "^2.9.9"
+pydantic-core = "^2.18.4"
+email-validator = "^2.1.1"
+sqlalchemy-utils = "^0.41.2"
+loguru = "^0.7.2"
+logging = "^0.4.9.6"
+asyncpg = "^0.29.0"
+pydantic-settings = "^2.3.1"
+pydantic = {version = "^2.7.3", extras = ["email", "dotenv"]}
+alembic = "^1.13.1"
+fastapi-utils = "^0.7.0"
+typing-inspect = "^0.9.0"
+python-keycloak = "^4.2.0"
+fastapi-keycloak-middleware = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
