@@ -12,7 +12,7 @@ __all__ = (
     "ErrorResponseMulti"
 )
 
-from {{cookiecutter.project_slug}}.utils.entities import PublicEntity, _PublicEntity
+from .entities import PublicEntity, _PublicEntity
 
 
 class ResponseMulti(PublicEntity, Generic[_PublicEntity]):

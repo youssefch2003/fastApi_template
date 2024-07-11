@@ -3,7 +3,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
 
 from {{cookiecutter.project_slug}}.db.base import ConcreteTable
-from {{cookiecutter.project_slug}}.utils.errors import DatabaseError, NotFoundError, UnprocessableError
+from .errors import DatabaseError, NotFoundError, UnprocessableError
 from typing import Any, AsyncGenerator, Generic, Type, Optional, Dict, List
 from sqlalchemy import asc, delete, desc, func, select, update, or_
 from sqlalchemy.engine import Result
@@ -11,7 +11,7 @@ from asyncpg.exceptions import UniqueViolationError
 
 __all__ = ("BaseRepository",)
 
-from {{cookiecutter.project_slug}}.utils.tools import build_filters
+from .tools import build_filters
 
 
 class BaseRepository(Generic[ConcreteTable]):
